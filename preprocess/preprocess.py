@@ -1,7 +1,8 @@
 import os
 import cv2
 import numpy as np
-import classifier
+from classifier.classifier1 import classifier1
+
 
 class Localize:
 
@@ -16,9 +17,7 @@ class Localize:
         crop the UFO image from original frame and pass it to classifier.
         submit the predicted numbers list.
         """
-
         ################## Please write your code here ###################
- 
 
         ##################################################################
         """
@@ -37,8 +36,9 @@ class Localize:
         crop2 = cv2.imread("classifier/numbers/2/2_1.jpg")
         crop3 = cv2.imread("classifier/numbers/3/3_1.jpg")
         crop4 = cv2.imread("classifier/numbers/4/4_1.jpg")
-		
+
         myanswer = classifier.predict(images=[crop1, crop2, crop3, crop4])
         return myanswer
+
 
 localize = Localize('cpu')
