@@ -14,7 +14,7 @@ class Spacy:
         self.read_width = self.width
 
         self.correct = 0
-        self. wrong = 0
+        self.wrong = 0
         self.level = 1
 
     def resize(self, image, width):
@@ -87,7 +87,7 @@ class Spacy:
 
         status = "numbers (top to bottom): {} | ".format(numbers)
         status += "myanswer: {} | ".format(myanswer)
-        status += "accuracy: {} %".format(spacy.accuracy())
+        status += "accuracy: {} %".format(self.accuracy())
         return status
 
     def accuracy(self):
