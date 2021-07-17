@@ -1,10 +1,10 @@
 # Spacy Challenge Project
 
-## Project enviroment setup
+## Install
+Python >= 3.8.0 required with all requirements.txt dependencies installed:
+
 $ git clone https://github.com/rickqiu/spacy.git
 $ cd spacy
-$ conda create -n spacy_env python=3.8.5 -y
-$ conda activate spacy_env
 $ pip install -r requirements.txt
 
 ## To run the application
