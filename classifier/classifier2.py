@@ -8,6 +8,7 @@ from tensorflow.keras.models import load_model
 class CustomClassifier:
     def __init__(self, path):
         self.model = load_model(os.path.join(os.path.dirname(os.path.realpath(__file__)), "mobile_net2.h5"))
+        # https://github.com/rickqiu/deep-learning/blob/master/tensorflow2_mobilenets.ipynb
 
     def predict_prob(self, images=None, size=224):
         """
