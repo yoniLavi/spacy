@@ -32,4 +32,4 @@ while True:
 
     # show frame, press q to quit
     spacy.show(frame)
-    spacy.sleep(0.3)
+    spacy.sleep(0.2)
