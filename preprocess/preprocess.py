@@ -1,7 +1,7 @@
 import os
 import cv2
 import numpy as np
-from classifier.classifier1 import classifier1
+from classifier.classifier import classifier
 
 
 class Localize:
