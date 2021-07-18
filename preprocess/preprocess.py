@@ -1,9 +1,6 @@
 import os
 import cv2
-import numpy as np
 from classifier.classifier import classifier
-#from yolov5 import YOLOv5
-# https://github.com/ultralytics/yolov5
 
 class Localize:
 
@@ -22,15 +19,16 @@ class Localize:
 
         ##################################################################
         """
-        Example: (how to use classifier)
-
         Note:-
         1. instead of reading cropped image from directory
         you need to find the locations of UFO's on the frame, crop them
         and sort them from top to bottom,
         pass them through classifier and return predicted numbers
-
-        2. This example below is just for demonstration purpose,
+        
+        2. To perform inference using YOLOv5 model
+        refer to Alternative Usage (https://pypi.org/project/yolo5/)
+ 
+        3. This example of "how to use a classifier" is just for demonstration purpose,
         you can delete it when you write your own code above.
         """
         crop1 = cv2.imread("classifier/numbers/1/1_1.jpg")
